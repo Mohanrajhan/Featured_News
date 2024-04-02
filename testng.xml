@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+  </listeners>
+  
+  
+  <test name="chromeTest">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="Newsno" value="1" />
+    <classes>
+      <class name="testCases.TC_001_UserInfoTest"/>
+      <class name="testCases.TC_002_CheckTitleTest"/>
+      <class name="testCases.TC_003_AuthorInfoTest"/>
+      <class name="testCases.TC_004_ShareOptionTest"/>
+      <class name="testCases.TC_005_NewsLetterTest"/>
+      <class name="testCases.TC_007_LikesAndViewsTest"/>
+      <class name="testCases.TC_006_LinksActiveTest"/>
+    </classes>
+  </test>   
+  
+  <test name="edgeTest">
+	<parameter name="browser" value="edge"/>
+	<parameter name="Newsno" value="2" />
+    <classes>
+      <class name="testCases.TC_001_UserInfoTest"/>
+      <class name="testCases.TC_002_CheckTitleTest"/>
+      <class name="testCases.TC_003_AuthorInfoTest"/>
+      <class name="testCases.TC_004_ShareOptionTest"/>
+      <class name="testCases.TC_005_NewsLetterTest"/>
+      <class name="testCases.TC_007_LikesAndViewsTest"/>
+      <class name="testCases.TC_006_LinksActiveTest"/>
+    </classes>
+  </test>
+  <test name="chromeTest2">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="Newsno" value="3" />
+    <classes>
+      <class name="testCases.TC_001_UserInfoTest"/>
+      <class name="testCases.TC_002_CheckTitleTest"/>
+      <class name="testCases.TC_003_AuthorInfoTest"/>
+      <class name="testCases.TC_004_ShareOptionTest"/>
+      <class name="testCases.TC_005_NewsLetterTest"/>
+      <class name="testCases.TC_007_LikesAndViewsTest"/>
+      <class name="testCases.TC_006_LinksActiveTest"/>
+    </classes>
+  </test>
+  <test name="edgeTest2">
+	<parameter name="browser" value="edge"/>
+	<parameter name="Newsno" value="4" />
+    <classes>
+      <class name="testCases.TC_001_UserInfoTest"/>
+      <class name="testCases.TC_002_CheckTitleTest"/>
+      <class name="testCases.TC_003_AuthorInfoTest"/>
+      <class name="testCases.TC_004_ShareOptionTest"/>
+      <class name="testCases.TC_005_NewsLetterTest"/>
+      <class name="testCases.TC_007_LikesAndViewsTest"/>
+      <class name="testCases.TC_006_LinksActiveTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
